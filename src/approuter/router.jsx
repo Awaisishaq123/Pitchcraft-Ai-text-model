@@ -5,7 +5,7 @@ import Signup from '../pages/signup'
 import Dashboard from '../pages/dashboard'
 import CreatePitch from '../pages/createPitch'
 import GeneratedPitch from '../pages/generatedPitch'
-import Export from '../pages/Export'
+import Export from '../pages/export'
 
 export default function AppRouter() {
   return (
