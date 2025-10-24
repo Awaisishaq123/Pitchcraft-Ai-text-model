@@ -2,12 +2,10 @@
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
-
   GoogleAuthProvider,
-  FacebookAuthProvider
+  FacebookAuthProvider,
 } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCvQau6loZOSoWBp9cNlIG4exs3eqM74LE",
@@ -18,7 +16,6 @@ const firebaseConfig = {
   appId: "1:771533300739:web:74af52628518f37d1a5a36",
   measurementId: "G-762M4FRH3Z"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
@@ -27,6 +24,3 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const googleProvider = new GoogleAuthProvider();
 export const facebookProvider = new FacebookAuthProvider();
-
-
-
